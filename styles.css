@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    margin-bottom: 20px;
+    padding: 15px 30px; /* Increased padding for a more button-like feel */
+    background-color: #ff5e62;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px; /* Rounded button edges */
+    box-shadow: 0 4px 6px rgba(255, 94, 98, 0.3); /* Subtle box shadow */
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #d3483e;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjusted box shadow */
+    background-color: #fff;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 15px;
+}
+
+.carousel-item {
+    display: flex; /* Added flex container */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    min-width: 100%;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fde4e5; /* Light pink background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 10px; /* Add a small margin between carousel items */
+    box-sizing: border-box; /* Ensure padding and border don't increase the width */
+}
+
+/* Valentine's Day themed heart shape */
+.carousel-item::before {
+    content: "\2665"; /* Unicode heart symbol */
+    display: block;
+    font-size: 36px;
+    color: #ff5e62; /* Heart color */
+    margin-bottom: 10px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 600px) {
+    .carousel-item {
+        margin: 0; /* Remove margin for smaller screens */
+    }
+}
+
+
+/*/=*/
